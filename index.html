@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS QUIZ</title>
+    <link rel="stylesheet" href="style1.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4uBBTJpHQBgi9zaVei56WNvNB0Yn1urnh-A&usqp=CAU">
+</head>
+<body>
+  
+  <div id="welcome" class="ab">
+    <h1>QUIZ TIME</h1><br>
+    <nav>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsEcJksku8wrxqgohoasypX4il_r0doZHp8Q&usqp=CAU" alt="">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Quiz Concepts</a></li>
+        <li><a href="sug.html">Suggestions</a></li>
+        <li><a href="c.html">Contact us</a></li>
+      </ul>
+      <button class="ram" id="hero">Begin Quiz</button>
+    
+    </nav>
+    <p> <b>Welcome!!!!..</b> This is the place where you can check your knowledge on <br> <span>JAVASCRIPT</span>  in a funny way.....</p><br><br>
+ 
+    <h2><u>About quiz</u> </h2> 
+    <p class="db">Examine your skills in JavaScript by giving the test. All JavaScript quiz tests are based on multiple-choice questions (MCQs). After the completion of test, you can review the score (submitted and correct).The test is designed for both beginners and seasoned professionals in the field of JavaScript. There is no need to register to start the test.
+   <br> Click on <span>‘Begin QUIZ’</span>  button to play the quiz
+    </p><br><br>
+
+    <h2><u>Quiz Concepts</u></h2>
+    <p class="cd">Questions include JavaScript variables, data types, functions, scope, keywords, loops,History,sample codes etc </p>
+    
+       
+  </div>
+  
+    <div class="quiz-container" id="quiz" hidden>
+        <div class="quiz-header">
+          <h1 style="color: gold;"> <u>JAVASCRIPT</u> </h1>
+          <h2 id="question">Question Text</h2>
+          <ul>
+            <li>
+              <input type="radio" name="answer" id="a" class="answer">
+              <label for="a" id="a_text">Answer</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="b" class="answer">
+              <label for="b" id="b_text">Answer</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="c" class="answer">
+              <label for="c" id="c_text">Answer</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="d" class="answer">
+              <label for="d" id="d_text">Answer</label>
+            </li>
+          </ul>
+        </div>
+        <button id="submit">Submit</button>
+      </div>
+      
+      
+</body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBI1Qtpiiw6gqWsLFHvk4N0cvT23brPqa0",
+    authDomain: "travelguide-faba3.firebaseapp.com",
+    projectId: "travelguide-faba3",
+    storageBucket: "travelguide-faba3.appspot.com",
+    messagingSenderId: "947611840072",
+    appId: "1:947611840072:web:72792b15840e12fe84327d",
+    measurementId: "G-GCWENZNW5H"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</html>
